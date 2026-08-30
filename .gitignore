@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# PyCharm
+.idea/
+
+# Pytest
+.pytest_cache/
+
+# Allure
+allure-results/
+allure-report/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Environment
+.env
