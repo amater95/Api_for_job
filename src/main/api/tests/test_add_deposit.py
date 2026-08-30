@@ -19,8 +19,8 @@ class TestAddDeposit:
 
         account_from_db = Account.get_one_from_db(db_session, id = create_account_request.id)
 
-        assert response.balance == add_deposit_request.amount, f"После пополнения баланс должен быть равен {response.balance}, но он остался равен {add_deposit_request.amount}"
-        assert account_from_db.balance == add_deposit_request.amount, f"Баланс в БД не соответствует пополнению {add_deposit_request.amount}"
+        assert response.balance == add_deposit_request.amount, f"После пополнения баланс должен быть равен {add_deposit_request.amount}, а остался {response.balance}"
+        assert account_from_db.balance == add_deposit_request.amount, f"Баланс в БД {account_from_db.balance} не соответствует пополнению {add_deposit_request.amount}"
 
 
 
